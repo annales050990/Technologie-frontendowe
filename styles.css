@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+header, footer {
+    background: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+table, th, td {
+    border: 1px solid #444;
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+/* Formularz */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+/* Wszystkie etykiety i pola pod sobą */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+/* Płeć – radio buttony w kolumnie */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.gender-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Checkbox – na oddzielnej linii */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Przycisk */
+button {
+    background: #222;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}

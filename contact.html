@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skontaktuj się z Klubem Bokserskim Iron Fist. Formularz kontaktowy i dane adresowe.">
+    <meta name="author" content="Anna Leś">
+    <title>Kontakt - Iron Fist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <p><a href="index.html">Strona główna</a> › Kontakt</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Napisz do nas</h2>
+            <form action="#" method="post">
+                <div>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required>
+                </div>
+
+                <div>
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" name="age" min="10" max="90">
+                </div>
+
+                <div>
+                <label>Płeć:</label>
+                <input type="radio" id="male" name="gender" value="mężczyzna">
+                <label for="male">Mężczyzna</label>
+                <input type="radio" id="female" name="gender" value="kobieta">
+                <label for="female">Kobieta</label>
+                </div>
+
+                <div>
+                <p><label for="topic">Temat wiadomości:</label></p>
+                <p><select id="topic" name="topic" required>
+                    <option value="">-- Wybierz temat --</option>
+                    <option value="zajecia">Zajęcia</option>
+                    <option value="czlonkostwo">Członkostwo</option>
+                    <option value="inne">Inne</option>
+                </select></div></p>
+                </div>
+
+                <p><label for="message">Wiadomość:</label></p>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <p><label>
+                    <input type="checkbox" name="agreement" required> Akceptuję politykę prywatności
+                </label></p>
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Nasze dane</h2>
+            <address>
+                Klub Bokserski Iron Fist<br>
+                ul. Sportowa 10, 38-400 Krosno<br>
+                Tel: <a href="tel:+48123456789">+48 123 456 789</a><br>
+                E-mail: <a href="mailto:kontakt@ironfist.pl">kontakt@ironfist.pl</a>
+            </address>
+        </section>
+
+        <section>
+            <h2>Znajdź nas</h2>
+            <iframe width="560" height="315"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.358238563486!2d19.919791115715686!3d50.06465007942657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0a7f5f3c73%3A0xe48c6e8b4b2c674d!2sKrak%C3%B3w!5e0!3m2!1spl!2spl!4v1697217600000!5m2!1spl!2spl"
+                loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Iron Fist | Zapraszamy do kontaktu!</p>
+    </footer>
+</body>
+</html>
